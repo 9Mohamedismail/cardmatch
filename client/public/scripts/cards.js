@@ -15,7 +15,7 @@ const renderCards = async () => {
       const bottomContainer = document.createElement("div");
       bottomContainer.classList.add("bottom-container");
 
-      topContainer.style.backgroundImage = `url(http://localhost:3001${creditCard.image})`;
+      topContainer.style.backgroundImage = `url(${creditCard.image})`;
 
       const name = document.createElement("h3");
       name.textContent = creditCard.name;

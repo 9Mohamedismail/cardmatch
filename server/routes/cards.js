@@ -13,6 +13,15 @@ router.get("/", (req, res) => {
 });
 
 router.get("/:cardId", (req, res) => {
+  const cardId = parseInt(req.params.cardId);
+  const card = cardData.find((c) => c.id === cardId);
+
+  if (!card) {
+    return res
+      .status(404)
+      .sendFile(path.resolve(__dirname, "../../client/public/404.html"));
+  }
+
   res
     .status(200)
     .sendFile(path.resolve(__dirname, "../../client/public/card.html"));

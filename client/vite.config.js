@@ -10,6 +10,9 @@ export default defineConfig({
       "/cards": {
         target: "http://localhost:3001",
       },
+      "/assets": {
+        target: "http://localhost:3001",
+      },
     },
   },
 });

@@ -180,6 +180,23 @@ main {
   margin: 10px 0;
 }
 
+.card-details h3 {
+  color: rgb(3, 7, 89);
+  font-size: 22px;
+  margin: 20px 0 8px;
+}
+
+.card-details ul {
+  margin: 0 0 10px;
+  padding-left: 24px;
+}
+
+.card-details li {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 6px 0;
+}
+
 /* Mobile CSS */
 @media (max-width: 768px) {
   .header-container {
