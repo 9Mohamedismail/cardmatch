@@ -12,7 +12,7 @@ const cardData = [
     cons: ["Lower rewards outside bonus categories", "Not ideal for travel"],
     description:
       "A student-friendly card focused on food, groceries, and entertainment rewards.",
-    image: "/images/savor-student.png",
+    image: "/assets/savor-student.png",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const cardData = [
     cons: ["Requires tracking categories", "Best value needs planning"],
     description:
       "A flexible cash back card for people who like maximizing different spending categories.",
-    image: "/images/freedom-flex.png",
+    image: "/assets/freedom-flex.png",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const cardData = [
     cons: ["Cash back categories have limits", "Not accepted everywhere"],
     description:
       "A strong everyday card for people who spend on groceries, gas, and online purchases.",
-    image: "/images/blue-cash-everyday.png",
+    image: "/assets/blue-cash-everyday.png",
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const cardData = [
     ],
     description:
       "A smart cash back card that rewards your highest eligible spending category each month.",
-    image: "/images/custom-cash.png",
+    image: "/assets/custom-cash.png",
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ const cardData = [
     cons: ["Has an annual fee", "Best value comes from travel use"],
     description:
       "A travel-focused card for people who want simple miles on purchases and travel benefits.",
-    image: "/images/venture-rewards.png",
+    image: "/assets/venture-rewards.png",
   },
 ];
 

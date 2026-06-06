@@ -1,7 +1,5 @@
 const renderCard = async () => {
-  const requestedID = parseInt(
-    new URLSearchParams(window.location.search).get("id"),
-  );
+  const requestedID = parseInt(window.location.href.split("/").pop());
 
   const response = await fetch("/cards");
   const data = await response.json();
@@ -10,9 +8,7 @@ const renderCard = async () => {
 
   let card;
 
-  if (data) {
-    card = data.find((card) => card.id === requestedID);
-  }
+  card = data.find((card) => card.id === requestedID);
 
   if (card) {
     document.getElementById("image").src = card.image;
@@ -25,7 +21,7 @@ const renderCard = async () => {
     document.getElementById("rewardType").textContent =
       "Reward Type: " + card.rewardType;
     document.getElementById("bestCategories").textContent =
-      "Best For: " + card.bestCategories.join(", ");
+      "Best Categories: " + card.bestCategories.join(", ");
     document.getElementById("welcomeBonus").textContent =
       "Welcome Bonus: " + card.welcomeBonus;
     document.getElementById("description").textContent = card.description;

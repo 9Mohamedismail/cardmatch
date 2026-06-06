@@ -1,19 +1,20 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 import cardRouter from "./routes/cards.js";
 
 const app = express();
 
-app.use("/public", express.static("./public"));
-app.use("/scripts", express.static("./public/scripts"));
-app.use("/cards", cardRouter);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-app.get("/", (req, res) => {
-  res
-    .status(200)
-    .send(
-      '<h1 style="text-align: center; margin-top: 50px;">UnEarthed API</h1>',
-    );
-});
+const clientPublicPath = path.resolve(__dirname, "../client/public");
+
+app.use("/assets", express.static(path.join(__dirname, "assets")));
+app.use("/scripts", express.static(path.join(clientPublicPath, "scripts")));
+app.use(express.static(clientPublicPath));
+
+app.use("/cards", cardRouter);
 
 const PORT = process.env.PORT || 3001;
 

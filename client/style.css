@@ -74,11 +74,11 @@ main {
 }
 
 .top-container {
-  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
   background-size: contain;
   background-position: center;
-  height: 170px;
-  background-color: #f5f5f5;
+  background-repeat: no-repeat;
 }
 
 .bottom-container {
@@ -143,25 +143,41 @@ main {
 .card-info {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
   padding: 40px;
 }
 
 .image-container {
-  width: 40vw;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
+  object-fit: contain;
 }
 
 .card-details {
-  width: 45vw;
+  width: 50%;
 }
 
 .card-details h2 {
   color: rgb(3, 7, 89);
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.card-details p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
 /* Mobile CSS */
