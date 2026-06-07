@@ -12,9 +12,8 @@ router.get("/", (req, res) => {
   res.status(200).json(cardData);
 });
 
-router.get("/:cardId", (req, res) => {
-  const cardId = parseInt(req.params.cardId);
-  const card = cardData.find((c) => c.id === cardId);
+router.get("/:slug", (req, res) => {
+  const card = cardData.find((c) => c.slug === req.params.slug);
 
   if (!card) {
     return res

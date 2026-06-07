@@ -10,12 +10,12 @@ const renderList = (elementId, items) => {
 };
 
 const renderCard = async () => {
-  const requestedID = parseInt(window.location.href.split("/").pop());
+  const requestedSlug = window.location.href.split("/").pop();
 
   const response = await fetch("/cards");
   const data = await response.json();
 
-  const card = data.find((card) => card.id === requestedID);
+  const card = data.find((card) => card.slug === requestedSlug);
 
   if (!card) {
     window.location.href = "/404.html";

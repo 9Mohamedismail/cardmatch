@@ -37,7 +37,7 @@ const renderCards = async () => {
       const link = document.createElement("a");
       link.textContent = "Read More >";
       link.setAttribute("role", "button");
-      link.href = `/cards/${creditCard.id}`;
+      link.href = `/cards/${creditCard.slug}`;
       bottomContainer.appendChild(link);
 
       card.appendChild(topContainer);

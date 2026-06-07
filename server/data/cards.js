@@ -1,6 +1,7 @@
 const cardData = [
   {
     id: 1,
+    slug: "savor-student",
     name: "Savor Student Card",
     issuer: "Capital One",
     minCreditLevel: "Fair",
@@ -16,6 +17,7 @@ const cardData = [
   },
   {
     id: 2,
+    slug: "freedom-flex",
     name: "Freedom Flex Card",
     issuer: "Chase",
     minCreditLevel: "Good",
@@ -31,6 +33,7 @@ const cardData = [
   },
   {
     id: 3,
+    slug: "blue-cash-everyday",
     name: "Blue Cash Everyday Card",
     issuer: "American Express",
     minCreditLevel: "Good",
@@ -50,6 +53,7 @@ const cardData = [
   },
   {
     id: 4,
+    slug: "custom-cash",
     name: "Custom Cash Card",
     issuer: "Citi",
     minCreditLevel: "Good",
@@ -72,6 +76,7 @@ const cardData = [
   },
   {
     id: 5,
+    slug: "venture-rewards",
     name: "Venture Rewards Card",
     issuer: "Capital One",
     minCreditLevel: "Excellent",
