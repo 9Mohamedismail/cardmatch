@@ -2,7 +2,7 @@
 
 Submitted by: Mohamed Ismail
 
-About this web app: **App description here**
+About this web app: **CardMatch helps users browse and compare credit cards, then open a detailed page with each card's key info, pros, and cons.**
 
 Time spent: 4 hours
 
@@ -18,7 +18,7 @@ The following **required** functionality is completed:
   - [X] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
   - [X] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
 - [X] **The web app serves an appropriate 404 page when no matching route is defined**
-- [ ] **The web app is styled using Picocss**
+- [X] **The web app is styled using Picocss**
 
 The following **optional** features are implemented:
 
@@ -32,15 +32,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./Animation.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  Add GIF tool here
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
+GIF created with ScreenToGif
 ## Notes
 
 N/A
