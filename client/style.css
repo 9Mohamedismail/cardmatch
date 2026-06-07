@@ -210,7 +210,7 @@ main {
 }
 
 .card-details h3 {
-  color: var(--brand-navy);
+  color: var(--text-black);
   font-size: 22px;
   margin: 20px 0 8px;
 }
@@ -221,6 +221,7 @@ main {
 }
 
 .card-details li {
+  color: var(--text-black);
   font-size: 17px;
   line-height: 1.5;
   margin: 6px 0;
