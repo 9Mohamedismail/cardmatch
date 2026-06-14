@@ -1,4 +1,5 @@
 import express from "express";
+import "./config/dotenv.js";
 import path from "path";
 import { fileURLToPath } from "url";
 import cardRouter from "./routes/cards.js";
