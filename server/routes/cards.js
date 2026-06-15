@@ -1,16 +1,14 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import cardData from "../data/cards.js";
+import CardsController from "../controllers/cards.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.status(200).json(cardData);
-});
+router.get("/", GiftsController.getGifts);
 
 router.get("/:slug", (req, res) => {
   const card = cardData.find((c) => c.slug === req.params.slug);
