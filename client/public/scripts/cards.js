@@ -46,7 +46,7 @@ const renderCards = async () => {
     });
   } else {
     const message = document.createElement("h2");
-    message.textContent = "No Credit Cards Available 😞";
+    message.textContent = "No Credit Cards Available :(";
     mainContent.appendChild(message);
   }
 };
